@@ -56,7 +56,7 @@ export const TodolistsList: React.FC<PropsType> = ({demo = false}) => {
 
     return <>
         <Grid container style={{padding: '20px'}}>
-            <AddItemForm addItem={addTodolistCallback}/>
+            <AddItemForm disabled={false} addItem={addTodolistCallback}/>
         </Grid>
         <Grid container spacing={3} style={{flexWrap: 'nowrap', overflowX: 'scroll'}}>
             {
